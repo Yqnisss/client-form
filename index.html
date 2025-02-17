@@ -8,33 +8,33 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Formulaire d'Inscription</h1>
+        <h1 class="text-center">Formulaire d'Inscription Doblo Panorama AUTOFISCarServices ELEULMA</h1>
         <form id="inscriptionForm">
             <div class="mb-3">
-                <label for="nom" class="form-label">Nom</label>
+                <label for="nom" class="form-label">Nom اللقب باللغة الفرنسية</label>
                 <input type="text" class="form-control" id="nom" required>
             </div>
             <div class="mb-3">
-                <label for="prenom" class="form-label">Prénom</label>
+                <label for="prenom" class="form-label">Prénom الاسم باللغة الفرنسية</label>
                 <input type="text" class="form-control" id="prenom" required>
             </div>
             <div class="mb-3">
-                <label for="nin" class="form-label">NIN</label>
+                <label for="nin" class="form-label">NIN  رقم التعريف الوطني المكون من 18 رقما</label>
                 <input type="text" class="form-control" id="nin" required>
             </div>
             <div class="mb-3">
-                <label for="adresse" class="form-label">Adresse</label>
+                <label for="adresse" class="form-label">Adresse العنوان باللفة الفرنسية مع الولاية</label>
                 <input type="text" class="form-control" id="adresse" required>
             </div>
             <div class="mb-3">
-                <label for="telephone" class="form-label">Numéro de téléphone</label>
+                <label for="telephone" class="form-label">Numéro de téléphone رقم أو أرقام الهواتف </label>
                 <input type="tel" class="form-control" id="telephone" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email البريد الالكتروني </label>
                 <input type="email" class="form-control" id="email" required>
             </div>
-            <button type="submit" class="btn btn-primary">Enregistrer</button>
+            <button type="submit" class="btn btn-primary">Inscription التسجيل</button>
         </form>
     </div>
 
@@ -48,10 +48,11 @@
                 nin: document.getElementById('nin').value,
                 adresse: document.getElementById('adresse').value,
                 telephone: document.getElementById('telephone').value,
-                email: document.getElementById('email').value
+                email: document.getElementById('email').value,
+                type: "DOBLO PANORAMA"
             };
 
-            // Send data to Google Apps Script (if needed)
+            // Send data to Google Apps Script
             fetch('https://script.google.com/macros/s/AKfycbwomK3CbMErCoNyIKmV0vCDvOnbf3cRse18btkx3hDa2deGuiwYO8GFClpCHUuSk7s0Ug/exec', {
                 method: 'POST',
                 body: JSON.stringify(client),
